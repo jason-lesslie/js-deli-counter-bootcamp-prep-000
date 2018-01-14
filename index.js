@@ -1,7 +1,7 @@
 katzDeli = [];
 otherDeli = ["Steven", "Blake", "Avi"];
-takeANumber(katzDeli, 'Ada')
-takeANumber(otherDeli, 'Grace');
+takeANumber(katzDeli, 'Ada') //outputs: "Welcome, Ada. You are number 1 in line."
+takeANumber(otherDeli, 'Grace'); //outputs: "Welcome, Grace. You are number 4 in line."
 
 function takeANumber(katzDeliLine, customerName) {
   var nextLinePlace = katzDeliLine.length + 1;
@@ -9,6 +9,10 @@ function takeANumber(katzDeliLine, customerName) {
   var outputString = "Welcome, " + customerName + ". You are number " + nextLinePlace + " in line.";
   return outputString
 }
+
+const deliLine = ["Steven", "Blake", "Avi"];
+nowServing(deliLine); //outputs: "Currently serving Steven."
+nowServing([]);  //outputs: "There is nobody waiting to be served!"
 
 function nowServing(katzDeliLine) {
   if (katzDeliLine.length > 0) {
@@ -19,6 +23,9 @@ function nowServing(katzDeliLine) {
     return "There is nobody waiting to be served!"
   }
 }
+
+currentLine([]); //outputs: "The line is currently empty."
+currentLine(["Bill", "Jane", "Ann"]); //outputs: "The line is currently: 1. Bill, 2. Jane, 3. Ann"
 
 function currentLine(katzDeliLine){
   if (katzDeliLine.length > 0) {
