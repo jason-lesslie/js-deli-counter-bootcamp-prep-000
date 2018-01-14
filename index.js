@@ -1,3 +1,8 @@
+katzDeli = [];
+otherDeli = ["Steven", "Blake", "Avi"];
+takeANumber(katzDeli, 'Ada')
+takeANumber(otherDeli, 'Grace');
+
 function takeANumber(katzDeliLine, customerName) {
   var nextLinePlace = katzDeliLine.length + 1;
   katzDeliLine[nextLinePlace - 1] = customerName
